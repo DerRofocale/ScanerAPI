@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ScanerAPI</name>
+    </assembly>
+    <members>
+        <member name="M:ScanerAPI.Controllers.BoardController.Post(ScanerAPI.Models.Board)">
+            <summary>
+            Проверка доски
+            </summary>
+            <param name="board">Объект модели</param>
+            <returns>true или false</returns>
+            <remarks>
+            Пример запроса:
+             
+                POST api/Board
+                {
+                    "wane": 0,
+                    "mold": 0,
+                    "holes": 0,
+                    "lenght": 1200,
+                    "width": 100.00
+                }
+            </remarks>
+        </member>
+        <member name="M:ScanerAPI.Controllers.CheckerController.Post(ScanerAPI.Models.Checker)">
+            <summary>
+            Проверка шашки
+            </summary>
+            <param name="checker">Объект модели</param>
+            <returns>true или false</returns>
+            <remarks>
+            Пример запроса:
+             
+                POST api/Checker
+                {
+                    "cracks": 0,
+                    "mold": 0,
+                    "holes": 0,
+                    "lenght": 145,
+                    "width": 100.00
+                }
+            </remarks>
+        </member>
+        <member name="P:ScanerAPI.Models.Board.wane">
+            <summary>
+            Обзол (кол-во) - 0
+            </summary>
+        </member>
+        <member name="P:ScanerAPI.Models.Board.mold">
+            <summary>
+            Плесень (кол-во) - 0
+            </summary>
+        </member>
+        <member name="P:ScanerAPI.Models.Board.holes">
+            <summary>
+            Сквозные отверстия (кол-во) - 0
+            </summary>
+        </member>
+        <member name="P:ScanerAPI.Models.Board.lenght">
+            <summary>
+            Длина (мм) - 0
+            </summary>
+        </member>
+        <member name="P:ScanerAPI.Models.Board.width">
+            <summary>
+            Ширина (мм) - 0.00
+            </summary>
+        </member>
+        <member name="P:ScanerAPI.Models.Checker.cracks">
+            <summary>
+            Трещины (мм) - 0
+            </summary>
+        </member>
+        <member name="P:ScanerAPI.Models.Checker.mold">
+            <summary>
+            Плесень (кол-во) - 0
+            </summary>
+        </member>
+        <member name="P:ScanerAPI.Models.Checker.holes">
+            <summary>
+            Сквозные отверстия (кол-во) - 0
+            </summary>
+        </member>
+        <member name="P:ScanerAPI.Models.Checker.lenght">
+            <summary>
+            Длина (мм) - 0
+            </summary>
+        </member>
+        <member name="P:ScanerAPI.Models.Checker.width">
+            <summary>
+            Ширина (мм) - 0.00
+            </summary>
+        </member>
+    </members>
+</doc>
