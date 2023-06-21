@@ -23,7 +23,7 @@ namespace ScanerAPI.Controllers
         ///         "wane": 0,
         ///         "mold": 0,
         ///         "holes": 0,
-        ///         "lenght": 1200,
+        ///         "length": 1200,
         ///         "width": 100.00
         ///     }
         /// </remarks>
@@ -42,9 +42,9 @@ namespace ScanerAPI.Controllers
                     if (board.holes != 0)
                         errors += 1;
 
-                    var a1 = (1198 <= board.lenght && board.lenght <= 1202) && (99.5d <= board.width && board.width <= 100.5d);
-                    var a2 = (1198 <= board.lenght && board.lenght <= 1202) && (144.5d <= board.width && board.width <= 145.5d);
-                    var a3 = (798 <= board.lenght && board.lenght <= 802) && (144.5d <= board.width && board.width <= 145.5d);
+                    var a1 = (1198 <= board.length && board.length <= 1202) && (99.5d <= board.width && board.width <= 100.5d);
+                    var a2 = (1198 <= board.length && board.length <= 1202) && (144.5d <= board.width && board.width <= 145.5d);
+                    var a3 = (798 <= board.length && board.length <= 802) && (144.5d <= board.width && board.width <= 145.5d);
                     
                     if (a1 == false && a2 == false && a3 == false)
                     {

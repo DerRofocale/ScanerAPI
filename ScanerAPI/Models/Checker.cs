@@ -17,7 +17,7 @@
         /// <summary>
         /// Длина (мм) - 0
         /// </summary>
-        public required int lenght { get; set; }
+        public required int length { get; set; }
         /// <summary>
         /// Ширина (мм) - 0.00
         /// </summary>
