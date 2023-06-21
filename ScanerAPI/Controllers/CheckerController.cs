@@ -34,7 +34,7 @@ namespace ScanerAPI.Controllers
                 if (checker != null)
                 {
                     int errors = 0;
-                    if (checker.cracks != 0)
+                    if (checker.cracks > 2)
                         errors += 1;
                     if (checker.mold != 0)
                         errors += 1;
