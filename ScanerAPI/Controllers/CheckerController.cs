@@ -22,7 +22,7 @@ namespace ScanerAPI.Controllers
         ///         "cracks": 0,
         ///         "mold": 0,
         ///         "holes": 0,
-        ///         "lenght": 145,
+        ///         "length": 145,
         ///         "width": 100.00
         ///     }
         /// </remarks>
@@ -41,8 +41,8 @@ namespace ScanerAPI.Controllers
                     if (checker.holes != 0)
                         errors += 1;
 
-                    var a1 = (143 <= checker.lenght && checker.lenght <= 147) && (99.5d <= checker.width && checker.width <= 100.5d);
-                    var a2 = (143 <= checker.lenght && checker.lenght <= 147) && (144.5d <= checker.width && checker.width <= 145.5d);
+                    var a1 = (143 <= checker.length && checker.length <= 147) && (99.5d <= checker.width && checker.width <= 100.5d);
+                    var a2 = (143 <= checker.length && checker.length <= 147) && (144.5d <= checker.width && checker.width <= 145.5d);
 
                     if (a1 == false && a2 == false)
                     {
